@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#e9e4d8">
+  <title>NEON HUNTER | 教室名簿</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">CLASSROOM MANAGEMENT</p>
+        <h1>NEON <span>HUNTER</span></h1>
+        <p class="subtitle">クラスの座席表</p>
+      </div>
+      <div class="class-mark">CLASS<br><strong>01</strong></div>
+    </header>
+
+    <section class="summary" aria-label="登録状況">
+      <div class="summary-item"><span>登録済み</span><strong id="registeredCount">0</strong><small>人</small></div>
+      <div class="summary-item"><span>空席</span><strong id="emptyCount">40</strong><small>席</small></div>
+      <div class="summary-progress">
+        <div class="progress-label"><span>クラス登録率</span><strong id="progressText">0%</strong></div>
+        <div class="progress-track"><div id="progressBar"></div></div>
+      </div>
+    </section>
+
+    <section class="classroom">
+      <div class="front-wall">
+        <div class="clock">12:45</div>
+        <div class="blackboard"><span>NEON HUNTER</span><small>WELCOME TO OUR CLASS</small></div>
+        <div class="teacher-desk">教 卓</div>
+      </div>
+
+      <div class="seat-area">
+        <div class="row-label">窓 側</div>
+        <div class="seat-grid" id="seatGrid" aria-label="40席の座席表"></div>
+        <div class="row-label">廊下側</div>
+      </div>
+
+      <div class="back-wall">
+        <span>CLASSROOM</span>
+        <span>40 DESKS</span>
+      </div>
+    </section>
+
+    <div class="bottom-actions">
+      <p>席をタップして名前を入力</p>
+      <button id="clearAllButton" type="button">全席クリア</button>
+    </div>
+    <footer>NEON HUNTER <span>✦</span> CLASS ROSTER</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
